@@ -38,6 +38,6 @@ Output:
 
 Clean rebuild (recommended after edits):
 
-Remove-Item .\solver.exe -ErrorAction SilentlyContinue
+1) Remove-Item .\solver.exe -ErrorAction SilentlyContinue
   
-  g++ -std=c++17 -O2 -Wall -Wextra main.cpp parser.cpp solver.cpp -o solver.exe
+2) g++ -std=c++17 -O2 -Wall -Wextra main.cpp parser.cpp solver.cpp -o solver.exe
