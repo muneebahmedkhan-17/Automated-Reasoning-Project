@@ -1,6 +1,3 @@
-# Automated-Reasoning-Project
-Implementation of a decision procedure in C++ for Automated Reasoning, including parsing, congruence closure, and array constraint handling.
-
 Overview of Project
 Reads constraints from a text file (one per line), parses them into an AST, runs the solver, and prints SAT/UNSAT.
 
@@ -23,10 +20,12 @@ Input Format
 
 Build Instructions (Windows / PowerShell, MinGW g++)
 1) Compile the project:
+   
    g++ -std=c++17 -O2 -Wall -Wextra main.cpp parser.cpp solver.cpp -o solver.exe
 
 Run Instructions
 - Run the solver with an input file:
+  
    .\solver.exe input.txt
 
 Example
@@ -37,6 +36,8 @@ Input file:
 Output:
    SAT
 
-Clean rebuild (recommended after edits)
-  Remove-Item .\solver.exe -ErrorAction SilentlyContinue
+Clean rebuild (recommended after edits):
+
+Remove-Item .\solver.exe -ErrorAction SilentlyContinue
+  
   g++ -std=c++17 -O2 -Wall -Wextra main.cpp parser.cpp solver.cpp -o solver.exe
